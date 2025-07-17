@@ -8,7 +8,7 @@ from dspy.teleprompt import BootstrapFewShot
 warnings.filterwarnings("ignore", category=UserWarning, module="urllib3")
 
 # Use .env and dspy to setup openai apikey
-load_dotenv('../../.env')
+load_dotenv('../.env')
 api_key = os.getenv('OPENAI_API_KEY')
 
 # Test question
@@ -56,11 +56,11 @@ print("=" * 80)
 # Create examples for dspy to create an optimized prompt (deliberately excluding the correct answer)
 trainset = [
     # Asia-Pacific countries with repeated letters
-    dspy.Example(question="Using the list of 195 recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between  Philippines and the Marshall Islands, which has the most repeated letters?", answer="Philippines", reasoning= "Because the Philippines has p repeated 4 times while Marshall Islands most preeated letter is a 3 times").with_inputs("question"),
-    dspy.Example(question="Using the list of 195 recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between  Mexico and Canada?", answer="Canada", reasoning= "Because Canada has the most repeated letter is a 3 times while Mexico most repeated letter is a 1 times").with_inputs("question"),
-    dspy.Example(question="Using the list of 195 recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between Rwanda and Saint Vincent and the Grenadines?", answer="Saint Vincent and the Grenadines", reasoning= "Because Saint Vincent and the Grenadines has the letter n repeated 6 times while Rwanda most repeated letter is a 2 times").with_inputs("question"),
-    dspy.Example(question="Using the list of 195 recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between the United States Of America and Egypt?", answer="United States of America", reasoning="After counting the repetition of letters in the United States of America you get A three times while Egypts most repeated letter is only repeated once").with_inputs("question"),
-    dspy.Example(question="Using the list of 195 recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between Marshall Islands and Saint Vincent and the Grenadines?", answer="Saint Vincent and the Grenadines", reasoning= "Because Saint Vincent and the Grenadines has the letter n repeated 6 times while Marshall Islands most repeated letter is a 3 times").with_inputs("question"),
+    dspy.Example(question="Using a list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between  Philippines and the Marshall Islands, which has the most repeated letters?", answer="Philippines", reasoning= "Because the Philippines has p repeated 4 times while Marshall Islands most preeated letter is a 3 times").with_inputs("question"),
+    dspy.Example(question="Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between  Mexico and Canada?", answer="Canada", reasoning= "Because Canada has the most repeated letter is a 3 times while Mexico most repeated letter is a 1 times").with_inputs("question"),
+    dspy.Example(question="Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between Rwanda and Saint Vincent and the Grenadines?", answer="Saint Vincent and the Grenadines", reasoning= "Because Saint Vincent and the Grenadines has the letter n repeated 6 times while Rwanda most repeated letter is a 2 times").with_inputs("question"),
+    dspy.Example(question="Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between the United States Of America and Egypt?", answer="United States of America", reasoning="After counting the repetition of letters in the United States of America you get A three times while Egypts most repeated letter is only repeated once").with_inputs("question"),
+    dspy.Example(question="Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between Marshall Islands and Saint Vincent and the Grenadines?", answer="Saint Vincent and the Grenadines", reasoning= "Because Saint Vincent and the Grenadines has the letter n repeated 6 times while Marshall Islands most repeated letter is a 3 times").with_inputs("question"),
    
 ]
 
@@ -119,6 +119,7 @@ def test_accuracy(model_func, model_name, num_tries=10):
             results.append("ERROR")
     
     accuracy = (correct / num_tries) * 100
+    print(f"{model_name}: {results})")
     print(f"{model_name}: {correct}/{num_tries} correct ({accuracy:.1f}%)")
     return accuracy, results
 

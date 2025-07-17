@@ -8,7 +8,7 @@ from dspy.teleprompt import BootstrapFewShot
 warnings.filterwarnings("ignore", category=UserWarning, module="urllib3")
 
 # Use .env and dspy to setup openai apikey
-load_dotenv('../../.env')
+load_dotenv('../.env')
 api_key = os.getenv('OPENAI_API_KEY')
 
 # Test question
@@ -117,6 +117,7 @@ def test_accuracy(model_func, model_name, num_tries=10):
             results.append("ERROR")
     
     accuracy = (correct / num_tries) * 100
+    print(f"{model_name}: {results})")
     print(f"{model_name}: {correct}/{num_tries} correct ({accuracy:.1f}%)")
     return accuracy, results
 
