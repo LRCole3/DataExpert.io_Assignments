@@ -1,6 +1,6 @@
 # 📅 Prompt Engineering
 
-### Prompting - file you need to submit is prompts.md
+## **Prompting** - file you need to submit is prompts.md
 
 - Prompt engineer the following question so it consistently answers the question right the first time.
   - What country has the same letter repeated the most in its name?
@@ -15,23 +15,23 @@ In your prompts.md file include:
 - The prompt engineered version to get GPT-4o to work better
 - The actual answer to the question 
 
-## Implementation Files
+### Implementation Files
 
-### Prompt Versions
+#### Prompt Versions
 - **prompt_v1.py** - Examples include the answer Saint Vincent and the Grenadines
 - **prompt_v2.py** - Examples for optimization do not include the answer Saint Vincent and the Grenadines
 
 
-### Output Directory
+#### Output Directory
 Contains results from running the different prompt versions:
 - Text files with model responses and analysis results
 
-### Prompts Directory
+#### Prompts Directory
 Contains optimized prompt configurations:
 - JSON files with the engineered prompts for each version
 
 
-### Vibe Coding - file you need to submit is main.py
+## Vibe Coding - file you need to submit is main.py
 
 - Follow the exercises in lab 2 where we vibecoded a FastAPI api
 
