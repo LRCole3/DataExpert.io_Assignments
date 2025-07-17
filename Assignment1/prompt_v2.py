@@ -126,18 +126,24 @@ def test_accuracy(model_func, model_name, num_tries=10):
         try:
             result = model_func(question=question)
             answer = result.answer if hasattr(result, 'answer') else str(result)
-            results.append(answer)
+            reasoning = result.reasoning if hasattr(result, 'reasoning') else None
+            results.append({'answer': answer, 'reasoning': reasoning})
             if "Saint Vincent and the Grenadines" in answer:
                 correct += 1
         except Exception as e:
             with open(output_file, "a") as f:
                 f.write(f"Error on try {i+1}: {e}\n")
-            results.append("ERROR")
+            results.append({'answer': "ERROR", 'reasoning': None})
     
     accuracy = (correct / num_tries) * 100
     with open(output_file, "a") as f:
-        f.write(f"{model_name}: {results})\n")
+        f.write(f"{model_name}: {[r['answer'] for r in results]})\n")
         f.write(f"{model_name}: {correct}/{num_tries} correct ({accuracy:.1f}%)\n")
+        # Print reasoning for Chain Of Thought tests
+        if "ChainOfThought" in model_name:
+            for i, result in enumerate(results):
+                if result['reasoning']:
+                    f.write(f"  Try {i+1} reasoning: {result['reasoning']}\n")
     return accuracy, results
 
 # Test optimized prompt 10 times - GPT-3.5 with dspy predict
