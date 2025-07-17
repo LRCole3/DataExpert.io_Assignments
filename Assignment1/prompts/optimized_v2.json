@@ -1,0 +1,62 @@
+{
+  "predict.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Using a list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between  Philippines and the Marshall Islands, which has the most repeated letters?",
+        "reasoning": "In the name \"Philippines,\" the letter 'i' is repeated 3 times, and the letter 'p' is also repeated 3 times. In \"Marshall Islands,\" the letter 'a' is repeated 3 times. Both countries have a maximum of 3 repeated letters, but since they are equal, we can consider both for the most repeated letters.",
+        "answer": "Philippines"
+      },
+      {
+        "augmented": true,
+        "question": "Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between  Mexico and Canada?",
+        "reasoning": "In the name \"Mexico,\" the most repeated letter is 'e', which appears once. In the name \"Canada,\" the letter 'a' is repeated three times. Therefore, Canada has more repeated letters than Mexico.",
+        "answer": "Canada"
+      },
+      {
+        "augmented": true,
+        "question": "Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between Rwanda and Saint Vincent and the Grenadines?",
+        "reasoning": "Saint Vincent and the Grenadines has the letter 'n' repeated 6 times, while Rwanda has no letter repeated more than once.",
+        "answer": "Saint Vincent and the Grenadines"
+      },
+      {
+        "augmented": true,
+        "question": "Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between the United States Of America and Egypt?",
+        "reasoning": "The United States of America has the letter 't' repeated 3 times, while Egypt has no repeated letters. Therefore, the United States of America has more repeated letters than Egypt.",
+        "answer": "United States of America"
+      },
+      {
+        "question": "Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between Marshall Islands and Saint Vincent and the Grenadines?",
+        "answer": "Saint Vincent and the Grenadines",
+        "reasoning": "Because Saint Vincent and the Grenadines has the letter n repeated 6 times while Marshall Islands most repeated letter is a 3 times"
+      }
+    ],
+    "signature": {
+      "instructions": "Identify the country with the most repeated letters in its name",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "The country name with the most repeated letters"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.9",
+      "dspy": "2.6.27",
+      "cloudpickle": "3.1"
+    }
+  }
+}

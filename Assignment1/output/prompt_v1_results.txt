@@ -1,0 +1,57 @@
+================================================================================
+TESTING PROMPT WITHOUT OPTIMIZATION
+================================================================================
+
+1. Testing GPT-3.5 with dspy predict:
+Result: The country that has the same letter repeated the most in its name is "Mauritius," with the letter "i" appearing four times.
+
+2. Testing GPT-3.5 with dspy chainofthought:
+Reasoning: To determine the country with the same letter repeated the most in its name, we need to consider the countries with repeated letters.
+Result: The country with the same letter repeated the most in its name is "Mauritius," which has the letter "i" repeated four times.
+
+3. Testing GPT-4o with dspy predict:
+Result: The country with the same letter repeated the most in its name is Solomon Islands, which has the letter "o" repeated three times.
+
+4. Testing GPT-4o with dspy chainofthought:
+Reasoning: To determine which country has the same letter repeated the most in its name, we need to examine the names of all countries and count the occurrences of each letter within each name. The goal is to find the country name where a single letter appears more frequently than in any other country's name. 
+
+One notable example is the country "Solomon Islands," where the letter 'o' appears three times. However, the country "Philippines" has the letter 'i' repeated three times and the letter 'p' repeated three times as well. This makes "Philippines" a strong candidate for having the most repeated letter in its name.
+Result: Philippines
+
+================================================================================
+CREATING EXAMPLES FOR DSPY OPTIMIZATION
+================================================================================
+Created 5 training examples
+
+================================================================================
+CREATING OPTIMIZED PROMPT WITH DSPY
+================================================================================
+Optimized prompt created successfully
+
+================================================================================
+TESTING OPTIMIZED PROMPT (10 TRIES EACH)
+================================================================================
+
+1. Testing optimized prompt - GPT-3.5 with dspy predict:
+GPT-3.5 Optimized Predict: ['The country with the most repeated letters in its name is "Netherlands".', 'The country with the most repeated letters in its name is "Netherlands".', 'The country with the most repeated letters in its name is "Netherlands".', 'The country with the most repeated letters in its name is "Netherlands".', 'The country with the most repeated letters in its name is "Netherlands".', 'The country with the most repeated letters in its name is "Netherlands".', 'The country with the most repeated letters in its name is "Netherlands".', 'The country with the most repeated letters in its name is "Netherlands".', 'The country with the most repeated letters in its name is "Netherlands".', 'The country with the most repeated letters in its name is "Netherlands".'])
+GPT-3.5 Optimized Predict: 0/10 correct (0.0%)
+
+2. Testing optimized prompt - GPT-3.5 with dspy chainofthought:
+GPT-3.5 Optimized ChainOfThought: ['Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines'])
+GPT-3.5 Optimized ChainOfThought: 10/10 correct (100.0%)
+
+3. Testing optimized prompt - GPT-4o with dspy predict:
+GPT-4o Optimized Predict: ['Solomon Islands', 'Solomon Islands', 'Solomon Islands', 'Solomon Islands', 'Solomon Islands', 'Solomon Islands', 'Solomon Islands', 'Solomon Islands', 'Solomon Islands', 'Solomon Islands'])
+GPT-4o Optimized Predict: 0/10 correct (0.0%)
+
+4. Testing optimized prompt - GPT-4o with dspy chainofthought:
+GPT-4o Optimized ChainOfThought: ['Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines'])
+GPT-4o Optimized ChainOfThought: 10/10 correct (100.0%)
+
+================================================================================
+SUMMARY OF RESULTS
+================================================================================
+GPT-3.5 Optimized Predict: 0.0% accuracy
+GPT-3.5 Optimized ChainOfThought: 100.0% accuracy
+GPT-4o Optimized Predict: 0.0% accuracy
+GPT-4o Optimized ChainOfThought: 100.0% accuracy

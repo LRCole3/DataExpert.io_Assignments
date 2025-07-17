@@ -15,43 +15,54 @@ api_key = os.getenv('OPENAI_API_KEY')
 question = "What country has the same letter repeated the most in its name?"
 expected_answer = "Saint Vincent and the Grenadines"
 
-print("=" * 80)
-print("TESTING PROMPT WITHOUT OPTIMIZATION")
-print("=" * 80)
+output_file = "Assignment1/output/prompt_v1_results.txt"
+with open(output_file, "w") as f:
+    f.write("=" * 80 + "\n")
+    f.write("TESTING PROMPT WITHOUT OPTIMIZATION\n")
+    f.write("=" * 80 + "\n")
 
 # Test gpt-3.5 with dspy predict
-print("\n1. Testing GPT-3.5 with dspy predict:")
+with open(output_file, "a") as f:
+    f.write("\n1. Testing GPT-3.5 with dspy predict:\n")
 lm_35 = dspy.LM("openai/gpt-3.5-turbo", api_key=api_key)
 dspy.configure(lm=lm_35)
 qa_35_predict = dspy.Predict('question -> answer')
 result_35_predict = qa_35_predict(question=question)
-print(f"Result: {result_35_predict.answer}")
+with open(output_file, "a") as f:
+    f.write(f"Result: {result_35_predict.answer}\n")
 
 # Test gpt-3.5 with dspy chainofthought
-print("\n2. Testing GPT-3.5 with dspy chainofthought:")
+with open(output_file, "a") as f:
+    f.write("\n2. Testing GPT-3.5 with dspy chainofthought:\n")
 qa_35_cot = dspy.ChainOfThought('question -> answer')
 result_35_cot = qa_35_cot(question=question)
-print(f"Reasoning: {result_35_cot.reasoning}")
-print(f"Result: {result_35_cot.answer}")
+with open(output_file, "a") as f:
+    f.write(f"Reasoning: {result_35_cot.reasoning}\n")
+    f.write(f"Result: {result_35_cot.answer}\n")
 
 # Test gpt-4o with dspy predict
-print("\n3. Testing GPT-4o with dspy predict:")
+with open(output_file, "a") as f:
+    f.write("\n3. Testing GPT-4o with dspy predict:\n")
 lm_4o = dspy.LM("openai/gpt-4o", api_key=api_key)
 dspy.configure(lm=lm_4o)
 qa_4o_predict = dspy.Predict('question -> answer')
 result_4o_predict = qa_4o_predict(question=question)
-print(f"Result: {result_4o_predict.answer}")
+with open(output_file, "a") as f:
+    f.write(f"Result: {result_4o_predict.answer}\n")
 
 # Test gpt-4o with dspy chainofthought
-print("\n4. Testing GPT-4o with dspy chainofthought:")
+with open(output_file, "a") as f:
+    f.write("\n4. Testing GPT-4o with dspy chainofthought:\n")
 qa_4o_cot = dspy.ChainOfThought('question -> answer')
 result_4o_cot = qa_4o_cot(question=question)
-print(f"Reasoning: {result_4o_cot.reasoning}")
-print(f"Result: {result_4o_cot.answer}")
+with open(output_file, "a") as f:
+    f.write(f"Reasoning: {result_4o_cot.reasoning}\n")
+    f.write(f"Result: {result_4o_cot.answer}\n")
 
-print("\n" + "=" * 80)
-print("CREATING EXAMPLES FOR DSPY OPTIMIZATION")
-print("=" * 80)
+with open(output_file, "a") as f:
+    f.write("\n" + "=" * 80 + "\n")
+    f.write("CREATING EXAMPLES FOR DSPY OPTIMIZATION\n")
+    f.write("=" * 80 + "\n")
 
 # Create examples for dspy to create an optimized prompt
 trainset = [
@@ -62,11 +73,13 @@ trainset = [
     dspy.Example(question="What nation has a name with the highest count of duplicate letters?", answer="Saint Vincent and the Grenadines").with_inputs("question")
 ]
 
-print(f"Created {len(trainset)} training examples")
+with open(output_file, "a") as f:
+    f.write(f"Created {len(trainset)} training examples\n")
 
-print("\n" + "=" * 80)
-print("CREATING OPTIMIZED PROMPT WITH DSPY")
-print("=" * 80)
+with open(output_file, "a") as f:
+    f.write("\n" + "=" * 80 + "\n")
+    f.write("CREATING OPTIMIZED PROMPT WITH DSPY\n")
+    f.write("=" * 80 + "\n")
 
 # Use dspy and examples to create an optimized prompt
 class CountryQuestion(dspy.Signature):
@@ -94,13 +107,15 @@ dspy.configure(lm=lm_4o)
 
 # Compile the optimized module
 compiled_classifier = bootstrap_few_shot.compile(country_classifier, trainset=trainset)
-compiled_classifier.save("optimized_v1.json")
+compiled_classifier.save("Assignment1/prompts/optimized_v1.json")
 
-print("Optimized prompt created successfully")
+with open(output_file, "a") as f:
+    f.write("Optimized prompt created successfully\n")
 
-print("\n" + "=" * 80)
-print("TESTING OPTIMIZED PROMPT (10 TRIES EACH)")
-print("=" * 80)
+with open(output_file, "a") as f:
+    f.write("\n" + "=" * 80 + "\n")
+    f.write("TESTING OPTIMIZED PROMPT (10 TRIES EACH)\n")
+    f.write("=" * 80 + "\n")
 
 def test_accuracy(model_func, model_name, num_tries=10):
     correct = 0
@@ -113,40 +128,49 @@ def test_accuracy(model_func, model_name, num_tries=10):
             if "Saint Vincent and the Grenadines" in answer:
                 correct += 1
         except Exception as e:
-            print(f"Error on try {i+1}: {e}")
+            with open(output_file, "a") as f:
+                f.write(f"Error on try {i+1}: {e}\n")
             results.append("ERROR")
     
     accuracy = (correct / num_tries) * 100
-    print(f"{model_name}: {results})")
-    print(f"{model_name}: {correct}/{num_tries} correct ({accuracy:.1f}%)")
+    with open(output_file, "a") as f:
+        f.write(f"{model_name}: {results})\n")
+        f.write(f"{model_name}: {correct}/{num_tries} correct ({accuracy:.1f}%)\n")
     return accuracy, results
 
 # Test optimized prompt 10 times - GPT-3.5 with dspy predict
-print("\n1. Testing optimized prompt - GPT-3.5 with dspy predict:")
+with open(output_file, "a") as f:
+    f.write("\n1. Testing optimized prompt - GPT-3.5 with dspy predict:\n")
 dspy.configure(lm=lm_35)
 compiled_classifier_35 = bootstrap_few_shot.compile(country_classifier, trainset=trainset)
 qa_35_opt_predict = dspy.Predict(CountryQuestion)
 acc_35_opt_predict, _ = test_accuracy(qa_35_opt_predict, "GPT-3.5 Optimized Predict")
 
 # Test optimized prompt 10 times - GPT-3.5 with dspy chainofthought
-print("\n2. Testing optimized prompt - GPT-3.5 with dspy chainofthought:")
+with open(output_file, "a") as f:
+    f.write("\n2. Testing optimized prompt - GPT-3.5 with dspy chainofthought:\n")
 acc_35_opt_cot, _ = test_accuracy(compiled_classifier_35, "GPT-3.5 Optimized ChainOfThought")
 
 # Test optimized prompt 10 times - GPT-4o with dspy predict
-print("\n3. Testing optimized prompt - GPT-4o with dspy predict:")
+with open(output_file, "a") as f:
+    f.write("\n3. Testing optimized prompt - GPT-4o with dspy predict:\n")
 dspy.configure(lm=lm_4o)
 compiled_classifier_4o = bootstrap_few_shot.compile(country_classifier, trainset=trainset)
 qa_4o_opt_predict = dspy.Predict(CountryQuestion)
 acc_4o_opt_predict, _ = test_accuracy(qa_4o_opt_predict, "GPT-4o Optimized Predict")
 
 # Test optimized prompt 10 times - GPT-4o with dspy chainofthought
-print("\n4. Testing optimized prompt - GPT-4o with dspy chainofthought:")
+with open(output_file, "a") as f:
+    f.write("\n4. Testing optimized prompt - GPT-4o with dspy chainofthought:\n")
 acc_4o_opt_cot, _ = test_accuracy(compiled_classifier_4o, "GPT-4o Optimized ChainOfThought")
 
-print("\n" + "=" * 80)
-print("SUMMARY OF RESULTS")
-print("=" * 80)
-print(f"GPT-3.5 Optimized Predict: {acc_35_opt_predict:.1f}% accuracy")
-print(f"GPT-3.5 Optimized ChainOfThought: {acc_35_opt_cot:.1f}% accuracy")
-print(f"GPT-4o Optimized Predict: {acc_4o_opt_predict:.1f}% accuracy")
-print(f"GPT-4o Optimized ChainOfThought: {acc_4o_opt_cot:.1f}% accuracy")
+with open(output_file, "a") as f:
+    f.write("\n" + "=" * 80 + "\n")
+    f.write("SUMMARY OF RESULTS\n")
+    f.write("=" * 80 + "\n")
+    f.write(f"GPT-3.5 Optimized Predict: {acc_35_opt_predict:.1f}% accuracy\n")
+    f.write(f"GPT-3.5 Optimized ChainOfThought: {acc_35_opt_cot:.1f}% accuracy\n")
+    f.write(f"GPT-4o Optimized Predict: {acc_4o_opt_predict:.1f}% accuracy\n")
+    f.write(f"GPT-4o Optimized ChainOfThought: {acc_4o_opt_cot:.1f}% accuracy\n")
+
+print(f"Results written to {output_file}")
