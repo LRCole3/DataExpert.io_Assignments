@@ -20,6 +20,8 @@ In your prompts.md file include:
 #### Prompt Versions
 - **prompt_v1.py** - Examples include the answer Saint Vincent and the Grenadines
 - **prompt_v2.py** - Examples for optimization do not include the answer Saint Vincent and the Grenadines
+- **ProgramOfThought_v1.py** - Example using program of thought to create a solution doesn't use any packages
+-- **ProgramOfThought_v1.py** - Example using program of thought to create a solution adding the constraint that it must use pycountry. (Note: some prompt optimization still needed getting an incorrect answer but executed code is close to correct)
 
 
 #### Output Directory
