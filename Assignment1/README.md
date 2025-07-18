@@ -26,6 +26,9 @@ Submit your findings in **prompts.md** including:
 ### Directory Structure
 - **Output/** - Contains results from running different prompt versions (text files with model responses and analysis)
 - **Prompts/** - Contains optimized prompt configurations (JSON files with engineered prompts)
+- **Configs** - Contains config files to run different secenarios (Work in progress to modularized code to use this)
+- **Examples** - Contains JSON files of examples to use with dspy opizations
+- **util** - Contains supporting functions for example file to generate Q/A pairs
 
 
 
