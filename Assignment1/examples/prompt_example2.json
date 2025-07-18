@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Using a list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between  Philippines and the Marshall Islands, which has the most repeated letters?",
+    "answer": "Philippines",
+    "reasoning": "Because the Philippines has p repeated 4 times while Marshall Islands most repeated letter is a 3 times"
+  },
+  {
+    "question": "Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between  Mexico and Canada?",
+    "answer": "Canada",
+    "reasoning": "Because Canada has the most repeated letter is a 3 times while Mexico most repeated letter is a 1 times"
+  },
+  {
+    "question": "Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between Rwanda and Saint Vincent and the Grenadines?",
+    "answer": "Saint Vincent and the Grenadines",
+    "reasoning": "Because Saint Vincent and the Grenadines has the letter n repeated 6 times while Rwanda most repeated letter is a 2 times"
+  },
+  {
+    "question": "Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between the United States Of America and Egypt?",
+    "answer": "United States of America",
+    "reasoning": "After counting the repetition of letters in the United States of America you get A three times while Egypts most repeated letter is only repeated once"
+  },
+  {
+    "question": "Using the list of all recognized countries. Compare the countries to see which has the most repeated letters in its name. For example, between Marshall Islands and Saint Vincent and the Grenadines?",
+    "answer": "Saint Vincent and the Grenadines",
+    "reasoning": "Because Saint Vincent and the Grenadines has the letter n repeated 6 times while Marshall Islands most repeated letter is a 3 times"
+  }
+]

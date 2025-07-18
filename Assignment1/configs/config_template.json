@@ -1,0 +1,6 @@
+{
+  "trainset_file_path": "prompt_example1.json",
+  "output_directory": "Assignment1/output/",
+  "output_file_name": "prompt_results.txt",
+  "description": "Unified configuration for training set file path and output settings"
+}

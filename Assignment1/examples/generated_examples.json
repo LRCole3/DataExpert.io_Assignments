@@ -1,0 +1,202 @@
+[
+  {
+    "question": "Question: Which country has the most repeated letters among \"Lesotho\", \"Belarus\", \"Tonga\"?",
+    "answer": "Answer: Lesotho has the most repeated letters with 2 occurrences of 'o'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Yemen\", \"Faroe Islands\", \"Belize\"?",
+    "answer": "Answer: Yemen, Faroe Islands, and Belize are tied with the most repeated letters, each having 2 repeated letters."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Lithuania\", \"Pitcairn\", \"Chad\"?",
+    "answer": "Answer: Lithuania and Pitcairn are tied with the most repeated letters, each having a letter that appears 2 times ('i' in Lithuania, 'a' in Lithuania, 'i' in Pitcairn)."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Turkmenistan\", \"Bosnia and Herzegovina\", \"Denmark\"?",
+    "answer": "Answer: Bosnia and Herzegovina has the most repeated letters with 3 occurrences of 'n' and 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Falkland Islands (Malvinas)\", \"Colombia\", \"Slovakia\"?",
+    "answer": "Answer: Falkland Islands (Malvinas) has the most repeated letters with 5 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Guinea\", \"Kuwait\", \"Bulgaria\"?",
+    "answer": "Answer: Bulgaria has the most repeated letters with 2 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Denmark\", \"Belarus\", \"Korea, Republic of\"?",
+    "answer": "Answer: Korea, Republic of has the most repeated letters with 2 occurrences of 'o' and 'r' and 'e'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Spain\", \"Kenya\", \"Antigua and Barbuda\"?",
+    "answer": "Answer: Antigua and Barbuda has the most repeated letters with 5 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Senegal\", \"Japan\", \"Hong Kong\"?",
+    "answer": "Answer: Senegal, Japan, and Hong Kong are tied with the most repeated letters, each having 2 repeated letters."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Colombia\", \"Italy\", \"Saint Kitts and Nevis\"?",
+    "answer": "Answer: Saint Kitts and Nevis has the most repeated letters with 3 occurrences of 's' and 'i' and 'n' and 't'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"San Marino\", \"Heard Island and McDonald Islands\", \"Ireland\"?",
+    "answer": "Answer: Heard Island and McDonald Islands has the most repeated letters with 6 occurrences of 'd'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Morocco\", \"Ghana\", \"Australia\"?",
+    "answer": "Answer: Morocco and Australia are tied with the most repeated letters, each having a letter that appears 3 times ('o' in Morocco, 'a' in Australia)."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"India\", \"Heard Island and McDonald Islands\", \"Somalia\"?",
+    "answer": "Answer: Heard Island and McDonald Islands has the most repeated letters with 6 occurrences of 'd'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Fiji\", \"Svalbard and Jan Mayen\", \"Yemen\"?",
+    "answer": "Answer: Svalbard and Jan Mayen has the most repeated letters with 5 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Puerto Rico\", \"Tokelau\", \"Cyprus\"?",
+    "answer": "Answer: Puerto Rico has the most repeated letters with 2 occurrences of 'r' and 'o'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Nauru\", \"Zimbabwe\", \"Jamaica\"?",
+    "answer": "Answer: Jamaica has the most repeated letters with 3 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Trinidad and Tobago\", \"Wallis and Futuna\", \"Algeria\"?",
+    "answer": "Answer: Trinidad and Tobago and Wallis and Futuna are tied with the most repeated letters, each having a letter that appears 3 times ('d' in Trinidad and Tobago, 'a' in Trinidad and Tobago, 'a' in Wallis and Futuna)."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Moldova, Republic of\", \"Bahamas\", \"New Caledonia\"?",
+    "answer": "Answer: Moldova, Republic of and Bahamas are tied with the most repeated letters, each having a letter that appears 3 times ('o' in Moldova, Republic of, 'a' in Bahamas)."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Turks and Caicos Islands\", \"South Georgia and the South Sandwich Islands\", \"Oman\"?",
+    "answer": "Answer: South Georgia and the South Sandwich Islands has the most repeated letters with 5 occurrences of 's'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Timor-Leste\", \"Malawi\", \"Cayman Islands\"?",
+    "answer": "Answer: Cayman Islands has the most repeated letters with 3 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Samoa\", \"Croatia\", \"Tunisia\"?",
+    "answer": "Answer: Samoa, Croatia, and Tunisia are tied with the most repeated letters, each having 2 repeated letters."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Azerbaijan\", \"Israel\", \"Belarus\"?",
+    "answer": "Answer: Azerbaijan has the most repeated letters with 3 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Costa Rica\", \"Uzbekistan\", \"Belize\"?",
+    "answer": "Answer: Costa Rica and Belize are tied with the most repeated letters, each having a letter that appears 2 times ('c' in Costa Rica, 'a' in Costa Rica, 'e' in Belize)."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Honduras\", \"Canada\", \"Saint Lucia\"?",
+    "answer": "Answer: Canada has the most repeated letters with 3 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Malawi\", \"Cambodia\", \"Pakistan\"?",
+    "answer": "Answer: Malawi, Cambodia, and Pakistan are tied with the most repeated letters, each having 2 repeated letters."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Lesotho\", \"Cambodia\", \"Luxembourg\"?",
+    "answer": "Answer: Lesotho, Cambodia, and Luxembourg are tied with the most repeated letters, each having 2 repeated letters."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Fiji\", \"Northern Mariana Islands\", \"Timor-Leste\"?",
+    "answer": "Answer: Northern Mariana Islands has the most repeated letters with 4 occurrences of 'n' and 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Indonesia\", \"Korea, Republic of\", \"Seychelles\"?",
+    "answer": "Answer: Seychelles has the most repeated letters with 3 occurrences of 'e'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"American Samoa\", \"Costa Rica\", \"Falkland Islands (Malvinas)\"?",
+    "answer": "Answer: Falkland Islands (Malvinas) has the most repeated letters with 5 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Kenya\", \"Afghanistan\", \"Austria\"?",
+    "answer": "Answer: Afghanistan has the most repeated letters with 3 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Saint Helena, Ascension and Tristan da Cunha\", \"Kenya\", \"Maldives\"?",
+    "answer": "Answer: Saint Helena, Ascension and Tristan da Cunha has the most repeated letters with 7 occurrences of 'a' and 'n'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Kiribati\", \"Andorra\", \"Saint Helena, Ascension and Tristan da Cunha\"?",
+    "answer": "Answer: Saint Helena, Ascension and Tristan da Cunha has the most repeated letters with 7 occurrences of 'a' and 'n'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Jordan\", \"Hungary\", \"Virgin Islands, U.S.\"?",
+    "answer": "Answer: Virgin Islands, U.S. has the most repeated letters with 3 occurrences of 'i' and 's'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Malaysia\", \"Solomon Islands\", \"Cyprus\"?",
+    "answer": "Answer: Malaysia and Solomon Islands are tied with the most repeated letters, each having a letter that appears 3 times ('a' in Malaysia, 's' in Solomon Islands, 'o' in Solomon Islands)."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Albania\", \"Dominica\", \"Tunisia\"?",
+    "answer": "Answer: Albania has the most repeated letters with 3 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Palestine, State of\", \"Dominica\", \"Viet Nam\"?",
+    "answer": "Answer: Palestine, State of has the most repeated letters with 3 occurrences of 'e' and 't'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Lao People's Democratic Republic\", \"Malawi\", \"Moldova, Republic of\"?",
+    "answer": "Answer: Lao People's Democratic Republic has the most repeated letters with 4 occurrences of 'e'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Kuwait\", \"Angola\", \"Ghana\"?",
+    "answer": "Answer: Angola and Ghana are tied with the most repeated letters, each having a letter that appears 2 times ('a' in Angola, 'a' in Ghana)."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Barbados\", \"Israel\", \"Dominica\"?",
+    "answer": "Answer: Barbados and Dominica are tied with the most repeated letters, each having a letter that appears 2 times ('b' in Barbados, 'a' in Barbados, 'i' in Dominica)."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Christmas Island\", \"Cocos (Keeling) Islands\", \"Mongolia\"?",
+    "answer": "Answer: Christmas Island and Cocos (Keeling) Islands are tied with the most repeated letters, each having a letter that appears 3 times ('s' in Christmas Island, 's' in Cocos (Keeling) Islands)."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Peru\", \"Morocco\", \"British Indian Ocean Territory\"?",
+    "answer": "Answer: British Indian Ocean Territory has the most repeated letters with 5 occurrences of 'i'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Åland Islands\", \"South Georgia and the South Sandwich Islands\", \"Faroe Islands\"?",
+    "answer": "Answer: South Georgia and the South Sandwich Islands has the most repeated letters with 5 occurrences of 's'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Liechtenstein\", \"Moldova, Republic of\", \"Indonesia\"?",
+    "answer": "Answer: Liechtenstein and Moldova, Republic of are tied with the most repeated letters, each having a letter that appears 3 times ('e' in Liechtenstein, 'o' in Moldova, Republic of)."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Peru\", \"Bulgaria\", \"Bhutan\"?",
+    "answer": "Answer: Bulgaria has the most repeated letters with 2 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Svalbard and Jan Mayen\", \"Togo\", \"Panama\"?",
+    "answer": "Answer: Svalbard and Jan Mayen has the most repeated letters with 5 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Côte d'Ivoire\", \"Eswatini\", \"Hungary\"?",
+    "answer": "Answer: Côte d'Ivoire and Eswatini are tied with the most repeated letters, each having a letter that appears 2 times ('e' in Côte d'Ivoire, 'i' in Côte d'Ivoire, 'i' in Eswatini)."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"India\", \"Martinique\", \"Bangladesh\"?",
+    "answer": "Answer: India, Martinique, and Bangladesh are tied with the most repeated letters, each having 2 repeated letters."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Guernsey\", \"Bonaire, Sint Eustatius and Saba\", \"Iraq\"?",
+    "answer": "Answer: Bonaire, Sint Eustatius and Saba has the most repeated letters with 5 occurrences of 'a'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"Poland\", \"Syrian Arab Republic\", \"Holy See (Vatican City State)\"?",
+    "answer": "Answer: Holy See (Vatican City State) has the most repeated letters with 4 occurrences of 't'."
+  },
+  {
+    "question": "Question: Which country has the most repeated letters among \"India\", \"Turkmenistan\", \"Kenya\"?",
+    "answer": "Answer: India and Turkmenistan are tied with the most repeated letters, each having a letter that appears 2 times ('i' in India, 't' in Turkmenistan, 'n' in Turkmenistan)."
+  }
+]
